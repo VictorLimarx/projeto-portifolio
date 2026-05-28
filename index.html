@@ -12,11 +12,11 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#ficha" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -44,11 +44,25 @@
             <article id="skills">
                 <h2><i class="fa-solid fa-brain"></i> Minhas skills</h2>
 
-                <div id="skill-container">
-                    <div class="item">
+                <div id="skill-container"> <!-- Container de Skills -->
+                    <div class="item"> <!-- Skill 01 -->
                         <div class="info">
                             <span class="nome">
                                 <i class="fa-solid fa-code"></i> HTML5
+                            </span>
+                            <span class="porcent">
+                                80%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> <!-- Skill 02 -->
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> CCS3
                             </span>
                             <span class="porcent">
                                 75%
@@ -59,52 +73,38 @@
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item"> <!-- Skill 03 -->
                         <div class="info">
                             <span class="nome">
-                                <i class="fa-solid fa-code"></i> CCS3
+                                <i class="fa-solid fa-person-rays"></i> Adaptabilidade
                             </span>
                             <span class="porcent">
-                                70%
+                                80%
                             </span>
                         </div>
                         <div class="barra">
-                            <div class="progresso" style="width: 70%;"></div>
+                            <div class="progresso" style="width: 80%;"></div>
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item"> <!-- Skill 04 -->
                         <div class="info">
                             <span class="nome">
-                                <i class="fa-solid fa-code"></i> Adaptabilidade
+                                <i class="fa-solid fa-person-rays"></i> Trabalho em equipe
                             </span>
                             <span class="porcent">
-                                70%
+                                90%
                             </span>
                         </div>
                         <div class="barra">
-                            <div class="progresso" style="width: 70%;"></div>
+                            <div class="progresso" style="width: 90%;"></div>
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item"> <!-- Skill 05 -->
                         <div class="info">
                             <span class="nome">
-                                <i class="fa-solid fa-code"></i> Trabalho em equipe
-                            </span>
-                            <span class="porcent">
-                                70%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progresso" style="width: 70%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i> Comunicação
+                                <i class="fa-solid fa-person-rays"></i> Comunicação
                             </span>
                             <span class="porcent">
                                 70%
@@ -119,15 +119,83 @@
 
             <article id="formacao">
                 <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+
+                <div id="formacao-container">
+                    <div class="curso">
+                        <p class="periodo">2023 - 2023</p>
+                        <h3 class="instituicao">Udemy</h3>
+                        <p class="titulacao">Gestão Ágil com Scrum</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025 - 2025</p>
+                        <h3 class="instituicao">Udemy</h3>
+                        <p class="titulacao">Power BI Completo - Do básico ao avançado</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2026 - 2026</p>
+                        <h3 class="instituicao">Curso em Vídeo</h3>
+                        <p class="titulacao">HTML5 e CSS3</p>
+                    </div>
+
+                    <div class="curso">
+                        <p class="periodo">2025 - Em progresso</p>
+                        <h3 class="instituicao">Uninove</h3>
+                        <p class="titulacao">Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                </div>
             </article> <!-- Fim article#formacao -->
 
             <article id="projetos">
                 <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+
+                <div id="projeto-container">
+                    <div class="projeto"> <!-- Projeto 01 -->
+                        <img class="foto" src="imagens2/projeto-01-videos.jpg" alt="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3 class="titulo">Projeto de Vídeos</h3>
+                            <p>Projeto contruído para treinar a inserção de vídeos em nosso site.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur illo voluptatum nisi minus totam dicta harum, iure, ducimus excepturi quidem, repellat velit eos asperiores? Sunt velit nulla illum mollitia.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 02 -->
+                        <img class="foto" src="imagens2/projeto-02-cordel.jpg" alt="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2026</p>
+                            <h3 class="titulo">Projeto Cordel</h3>
+                            <p>Projeto contruído para treinar efeito paralax em imagens.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur illo voluptatum nisi minus totam dicta harum, iure, ducimus excepturi quidem, repellat velit eos asperiores? Sunt velit nulla illum mollitia.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> <!-- Projeto 03 -->
+                        <img class="foto" src="imagens2/projeto-android.jpg" alt="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2026</p>
+                            <h3 class="titulo">Projeto Android</h3>
+                            <p>Projeto contruído para treinar conteúdos e imagens dinânicas.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur illo voluptatum nisi minus totam dicta harum, iure, ducimus excepturi quidem, repellat velit eos asperiores? Sunt velit nulla illum mollitia.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
             </article> <!-- Fim article#projetos -->
         </section>
     </main>    
     <footer>
-
+        Portifólio desenvolvido por <a href="https://github.com/VictorLimarx" target="_blank" rel="nofollow">Victor Lima</a> em 2026
     </footer>
 
     <script src="scripts/script.js"></script>
